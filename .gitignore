@@ -82,7 +82,7 @@ typings/
 .nuxt
 
 # Webpack bundle
-dist/bundle.js
+bundle.js
 
 # Gatsby files
 .cache/
@@ -104,3 +104,6 @@ dist/bundle.js
 
 # TernJS port file
 .tern-port
+
+# Webstorm config
+.idea/
