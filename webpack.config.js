@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     watch: true,
     module: {
@@ -8,5 +10,9 @@ module.exports = {
                 loader: "babel-loader"
             }
         }]
+    },
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist/js')
     }
 };
