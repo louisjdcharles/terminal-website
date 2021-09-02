@@ -4,7 +4,7 @@ import Counters from "./Counters";
 
 function App() {
     return(
-        <Counters/>
+        <h1>Hello, World!</h1>
     );
 }
 
