@@ -1,16 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
+import Counters from "./Counters";
 
-import Table from "./Table";
-
-function App(props) {
+function App() {
     return(
-        <div>
-            <Table
-                names = {["person1", "Louis", "John Smith"]}
-                ages = {[30, 16, 22]}
-            />
-        </div>
+        <Counters/>
     );
 }
 
