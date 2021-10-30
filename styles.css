@@ -33,11 +33,6 @@
 }
 
 body {
-    background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/1455.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: "CascadiaCode", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -47,6 +42,19 @@ body {
     height: 100vh;
     margin: 0;
     font-size: var(--font-size);
+}
+
+.bgimage {
+    background-image: url("https://i.imgur.com/arOd0He.gif");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height:100vh;
+    z-index: -1;
+    position: absolute;
+    filter: blur(2px);
 }
 
 .window {
