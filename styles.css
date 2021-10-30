@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'CascadiaCode';
+    src: URL('Caskaydia\ Cove\ Nerd\ Font\ Complete.ttf') format('truetype');
+}
+
+/* colour scheme */
+:root {
+    --gruv-bg: #282828;
+    --gruv-grey: #928374;
+    --gruv-red: #cc241d;
+    --gruv-light-red: #fb4934;
+    --gruv-green: #98971a;
+    --gruv-light-green: #b8bb26;
+    --gruv-yellow: #d79921;
+    --gruv-light-yellow: #fabd2f;
+    --gruv-blue: #458588;
+    --gruv-light-blue: #83a598;
+    --gruv-purple: #b16286;
+    --gruv-light-purple: #d3869b;
+    --gruv-aqua: #689d6a;
+    --gruv-light-aqua: #8ec07c;
+    --gruv-light-grey: #a89984;
+    --gruv-fg: #ebdbb2;
+    --gruv-orange: #d65d0e;
+    --gruv-light-orange: #fe8019;
+    --font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --font-size: 12px;
+    }
+}
+
+body {
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/1455.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "CascadiaCode", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: var(--font-size);
+}
+
+.window {
+    width: 80vw;
+    height: 80vh;
+    border-radius: 15px 15px 15px 15px;
+    background: none;
+}
+
+.header {
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .win-title {
+    color: white;
+    align-self: center;
+}
+
+.header .button-container .button.b1 {
+    color: #00CA4E;
+}
+
+.header .button-container .button.b2 {
+    color: #FFBD44;
+}
+
+.header .button-container .button.b3 {
+    color: #FF605C;
+}
+
+.term-container {
+    height: calc(100% - 1rem - 10px * 2);
+    padding-bottom: 15px;
+    background-color: #282828;
+    opacity: 0.95; 
+    border-radius: 0 0 15px 15px;
+    overflow-y: hidden;
+}
+
+.term {
+    color: #ebdbb2;
+    padding: 10px;
+    overflow-x: wrap;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.term-row {
+    width: 100%;
+}
+
+.term input {
+    border: none;
+    background: none;
+    font-family: "CascadiaCode", monospace;
+    color: #ebdbb2;
+    caret-color: #ebdbb2;
+    font-size: var(--font-size);
+    width: 50vw;
+}
+
+.term input:focus{
+    outline: none;
+}
+
+a {
+    color: var(--gruv-purple);
+}
