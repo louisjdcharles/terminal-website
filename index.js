@@ -26,7 +26,7 @@ const help = args => {
                 <br>
                 <span><span style="color: #458588;">ls:</span> list the current directory</span><br>
                 <span><span style="color: #458588;">clear:</span> clears the terminal</span><br>
-                <span><span style="color: #458588;">cat</span> <span style="font-style: italic; color: #cc241d;">file</span>: list the current directory</span><br>
+                <span><span style="color: #458588;">cat</span> <span style="font-style: italic; color: #cc241d;">file</span>: display contents of file</span><br>
             </div>`
     } else {
         return `Error: help: invalid option '${args[1]}'`
