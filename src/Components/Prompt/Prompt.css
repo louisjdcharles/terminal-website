@@ -1,0 +1,23 @@
+.Prompt {
+  color: var(--gruv-fg);
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.Cursor {
+    color: var(--gruv-fg);
+
+    animation: blink-animation 0.68s steps(5, start) infinite alternate;
+    -webkit-animation: blink-animation 0.6s steps(5, start) infinite alternate;
+}
+
+@keyframes blink-animation {
+    to {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      opacity: 0;
+    }
+  }
