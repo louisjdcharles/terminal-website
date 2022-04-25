@@ -10,6 +10,10 @@ const Terminal = ({...props}) => {
 
     const inputRef = useRef();
 
+    const clearInput = () => {
+        setTimeout(() => setPreviousInputs([]), 0)
+    }
+
     const setInputFocused = (e) => {
         
         e.preventDefault();
@@ -58,8 +62,8 @@ const Terminal = ({...props}) => {
             </div>
 
             <div className='row-container'>
-                { previousInputs.map( (str, key) => <Prompt inputText={str} key={key} isSubmitted={true}/>) }
-                <Prompt inputText={currentInput} isSubmitted={false}/>
+                { previousInputs.map( (str, key) => <Prompt inputText={str} key={key} isSubmitted={true} inputClearer={() => clearInput()}/>) }
+                <Prompt inputText={currentInput} isSubmitted={false} inputClearer={clearInput}/>
             </div>
         </div>
     )

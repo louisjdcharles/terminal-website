@@ -1,6 +1,8 @@
+import React from 'react';
+import { CommandRunner } from '../Commands/Commands';
 import './Prompt.css'
 
-const Prompt = ({inputText, isSubmitted, ...props}) => {
+const Prompt = ({inputText, isSubmitted, inputClearer, ...props}) => {
 
     const renderCursor = () => {
         if (!isSubmitted) {
@@ -13,7 +15,7 @@ const Prompt = ({inputText, isSubmitted, ...props}) => {
     const renderOutput = () => {
         if (isSubmitted) {
             return (
-                <span>Command Output!</span>
+                <CommandRunner input={inputText} inputClearer={inputClearer}/>
             )
         }
     }
@@ -28,7 +30,7 @@ const Prompt = ({inputText, isSubmitted, ...props}) => {
             <span style= {{color: "#cc241d"}}>&#xe725; </span>
             <span style= {{color: "#83a598"}}>{"{"}</span><span style ={{color: "#cc241d"}}>master</span><span style ={{color: "#83a598"}}>{"}"}</span>
             <span style= {{color: "#458588"}}> &#xfb26; </span>
-            {renderInput()}{renderCursor()}<br />
+            {renderInput()}{renderCursor()}
             {renderOutput()}
         </div>
     )
