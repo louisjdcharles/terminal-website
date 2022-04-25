@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'CascadiaCode';
+  src: URL('font.ttf') format('truetype');
+}
+
+:root {
+  --gruv-bg: #282828;
+  --gruv-grey: #928374;
+  --gruv-red: #cc241d;
+  --gruv-light-red: #fb4934;
+  --gruv-green: #98971a;
+  --gruv-light-green: #b8bb26;
+  --gruv-yellow: #d79921;
+  --gruv-light-yellow: #fabd2f;
+  --gruv-blue: #458588;
+  --gruv-light-blue: #83a598;
+  --gruv-purple: #b16286;
+  --gruv-light-purple: #d3869b;
+  --gruv-aqua: #689d6a;
+  --gruv-light-aqua: #8ec07c;
+  --gruv-light-grey: #a89984;
+  --gruv-fg: #ebdbb2;
+  --gruv-orange: #d65d0e;
+  --gruv-light-orange: #fe8019;
+  --font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'CascadiaCode','Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
