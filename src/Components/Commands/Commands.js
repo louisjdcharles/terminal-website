@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { About, Links, Projects, Tech } from "./Files";
 
 const HelpCommand = () => {
@@ -29,31 +28,26 @@ const LsCommand = (args) => {
 }
 
 const CatCommand = (args) => {
-    if (args.length == 1) {
+    if (args.length === 1) {
         return <span>Error: cat: no file supplied.</span>
     }
 
-    if (args[1][0] == "-") {
+    if (args[1][0] === "-") {
         return <span>Error: cat: invalid option "{args[1]}"</span>
     }
 
     switch (args[1]) {
         case "about.md":
             return <><br/>{About}</>;
-            break;
         case "links.html":
             return <><br/>{Links}</>;
-            break;
         case "tech.js":
             return <><br/>{Tech}</>;
-            break;
         case "projects.rs":
             return <><br/>{Projects}</>;
-            break;
         
         default:
             return <span>Error: cat: no such file "{args[1]}"</span>
-            break;
 
     }
 }

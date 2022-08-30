@@ -4,7 +4,8 @@ import './Terminal.css'
 
 const Terminal = ({...props}) => {
 
-    const [previousInputs, setPreviousInputs] = useState([]);
+    // show the help message on page load
+    const [previousInputs, setPreviousInputs] = useState(["help"]);
 
     const [currentInput, setCurrentInput] = useState("");
 
