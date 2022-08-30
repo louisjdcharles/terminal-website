@@ -1,5 +1,7 @@
 # Terminal Website
 
+[view here!](https://louisjdcharles.github.io/terminal-website/)
+
 > an example developer portfolio website that looks like a terminal emulator
 
 ## Screenshot
@@ -17,5 +19,5 @@ Deploying to github pages:
 1. Create a branch in the repository called `gh-pages`
 2. In the github repository settings, under `pages`, set `Source` to `deploy from branch`, and `Branch` to `gh-pages`
 ![](https://i.imgur.com/D2zZ4Bm.png)
-4. set the `homepage` key in `package.json` to the url of the github pages page, this will be `<username>.github.io` or `<username>.github.io/<repository name>`
+4. set the `homepage` key in `package.json` to the url of the github pages page, this will be `http://<username>.github.io` or `http://<username>.github.io/<repository name>`
 3. run `npm run deploy`
